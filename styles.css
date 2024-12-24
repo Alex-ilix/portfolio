@@ -140,6 +140,7 @@ body, html {
     overflow-y: auto;
 }
 
+/* Galaxie */
 .galaxy {
     position: relative;
     width: 100vw;
@@ -151,7 +152,7 @@ body, html {
 /* Scintillement des étoiles */
 @keyframes twinkling {
     0%, 100% {
-        opacity: 0.7;
+        opacity: 0.5;
     }
     50% {
         opacity: 1;
@@ -165,8 +166,15 @@ body, html {
     background-color: white;
     border-radius: 50%;
     animation: twinkling 2s infinite;
-    opacity: 0.7;
+    opacity: 0.5;
 }
+
+/* Positionnement aléatoire des étoiles */
+.galaxy .star:nth-child(1) { top: 10%; left: 20%; }
+.galaxy .star:nth-child(2) { top: 30%; left: 40%; }
+.galaxy .star:nth-child(3) { top: 50%; left: 60%; }
+.galaxy .star:nth-child(4) { top: 70%; left: 80%; }
+.galaxy .star:nth-child(5) { top: 90%; left: 10%; }
 
 /* Étoiles filantes */
 @keyframes shooting-star {
@@ -176,16 +184,29 @@ body, html {
     }
     100% {
         opacity: 0;
-        transform: translate(500px, 500px) scale(0.2);
+        transform: translate(300px, 300px) scale(0.2);
     }
 }
 
 .shooting-star {
     position: absolute;
-    width: 2px;
-    height: 2px;
+    width: 3px;
+    height: 3px;
     background: linear-gradient(45deg, white, rgba(255, 255, 255, 0));
     border-radius: 50%;
-    animation: shooting-star 3s ease-in-out infinite;
+    animation: shooting-star 5s ease-in-out infinite;
     opacity: 0.8;
+}
+
+/* Positionnement aléatoire des étoiles filantes */
+.galaxy .shooting-star:nth-child(6) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 0s;
+}
+
+.galaxy .shooting-star:nth-child(7) {
+    top: 70%;
+    left: 20%;
+    animation-delay: 2s;
 }
