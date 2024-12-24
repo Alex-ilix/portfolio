@@ -131,13 +131,13 @@ main {
     order: 1;
 }
 
-
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     height: 100%;
     background: #000; /* Fond noir pour la galaxie */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .galaxy {
@@ -188,48 +188,4 @@ body, html {
     border-radius: 50%;
     animation: shooting-star 3s ease-in-out infinite;
     opacity: 0.8;
-}
-
-/* Génération d'étoiles */
-.galaxy .star:nth-child(1) {
-    top: 20%;
-    left: 15%;
-    animation-delay: 0s;
-}
-
-.galaxy .star:nth-child(2) {
-    top: 50%;
-    left: 30%;
-    animation-delay: 0.5s;
-}
-
-.galaxy .star:nth-child(3) {
-    top: 70%;
-    left: 70%;
-    animation-delay: 1s;
-}
-
-.galaxy .star:nth-child(4) {
-    top: 40%;
-    left: 80%;
-    animation-delay: 1.5s;
-}
-
-.galaxy .star:nth-child(5) {
-    top: 10%;
-    left: 50%;
-    animation-delay: 2s;
-}
-
-/* Génération d'étoiles filantes */
-.galaxy .shooting-star:nth-child(6) {
-    top: 30%;
-    left: 10%;
-    animation-delay: 3s;
-}
-
-.galaxy .shooting-star:nth-child(7) {
-    top: 60%;
-    left: 40%;
-    animation-delay: 5s;
 }
