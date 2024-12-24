@@ -141,13 +141,29 @@ body, html {
 }
 
 /* Galaxie */
+
+/* Conteneur pour les étoiles (fond) */
 .galaxy {
-    position: relative;
+    position: relative; /* Conteneur parent */
     width: 100vw;
     height: 100vh;
     background: radial-gradient(circle, #1a1a1a 0%, #000000 80%);
     overflow: hidden;
+    z-index: -1; /* Met la galaxie en arrière-plan */
 }
+
+/* Scintillement des étoiles */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkling 2s infinite;
+    opacity: 0.5;
+    z-index: -1; /* Toujours en arrière-plan */
+}
+
 
 /* Scintillement des étoiles */
 @keyframes twinkling {
@@ -157,16 +173,6 @@ body, html {
     50% {
         opacity: 1;
     }
-}
-
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: white;
-    border-radius: 50%;
-    animation: twinkling 2s infinite;
-    opacity: 0.5;
 }
 
 /* Positionnement aléatoire des étoiles */
