@@ -79,10 +79,10 @@ header {
     color: #121212;
 }
 
-/* Affichage du menu déroulant *
+/* Affichage du menu déroulant */
 .dropdown:hover .dropdown-menu {
     display: block;
-}*/
+}
 
 /* Contenu */
 main {
