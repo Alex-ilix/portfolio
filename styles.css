@@ -123,54 +123,40 @@ body, html {
     overflow-y: auto;
 }
 
-/* Étoiles */
-.star-container {
+.starWars, .starCraft {
+    z-index: 0;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 3px;
+    height: 3px;
+    background: transparent;
     pointer-events: none;
-    z-index: -1;
 }
 
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: white;
-    border-radius: 50%;
-    animation: twinkling 2s infinite;
-    opacity: 0.5;
+.starCraft{
+    animation: blink 3s infinite;
+
+}
+.starWars{
+    animation: blink 5s infinite;
+
 }
 
-@keyframes twinkling {
-    0%, 100% {
-        opacity: 0.7;
-    }
-    50% {
-        opacity: 1;
-    }
+.starWars {
+    box-shadow:
+            65vw 75vh #FFF, 75vw 85vh #FFF, 85vw 95vh #FFF,
+            95vw 15vh #FFF, 5vw 5vh #FFF, 10vw 50vh #FFF,
+            30vw 20vh #FFF, 50vw 70vh #FFF, 70vw 10vh #FFF,
+            90vw 30vh #FFF, 20vw 80vh #FFF, 40vw 40vh #FFF,
+            60vw 90vh #FFF, 80vw 60vh #FFF;
 }
 
-/* Étoiles filantes */
-@keyframes shooting-star {
-    0% {
-        opacity: 1;
-        transform: translate(0, 0) scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(500px, 500px) scale(0.2);
-    }
-}
-
-.shooting-star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: linear-gradient(45deg, white, rgba(255, 255, 255, 0));
-    border-radius: 50%;
-    animation: shooting-star 3s ease-in-out infinite;
-    opacity: 0.8;
+.starCraft {
+    box-shadow:
+            50vw 50vh #FFF, 20vw 30vh #FFF, 70vw 80vh #FFF,
+            90vw 20vh #FFF, 10vw 10vh #FFF, 30vw 70vh #FFF,
+            80vw 40vh #FFF, 60vw 60vh #FFF, 40vw 90vh #FFF,
+            50vw 10vh #FFF, 15vw 25vh #FFF, 25vw 35vh #FFF,
+            35vw 45vh #FFF, 45vw 55vh #FFF, 55vw 65vh #FFF;
 }
