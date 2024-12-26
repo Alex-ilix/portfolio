@@ -1,10 +1,10 @@
 /* Style général */
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #1e1e1e;
-    color: #f0f0f0;
+    background: linear-gradient(to bottom, #0B032F, #FF8C00); /* Encore moins d'orange */
+    color: #78566D;
     margin: 0;
-    padding: 0;
+    height: 100%;
 }
 
 header {
@@ -129,6 +129,46 @@ main {
 
 .image.left {
     order: 1;
+}
+
+
+
+.starWars, .starCraft {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    pointer-events: none;
+}
+
+.starCraft{
+    animation: blink 3s infinite;
+
+}
+.starWars{
+    animation: blink 5s infinite;
+
+}
+
+.starWars {
+    box-shadow:
+            65vw 75vh #FFF, 75vw 85vh #FFF, 85vw 95vh #FFF,
+            95vw 15vh #FFF, 5vw 5vh #FFF, 10vw 50vh #FFF,
+            30vw 20vh #FFF, 50vw 70vh #FFF, 70vw 10vh #FFF,
+            90vw 30vh #FFF, 20vw 80vh #FFF, 40vw 40vh #FFF,
+            60vw 90vh #FFF, 80vw 60vh #FFF;
+}
+
+.starCraft {
+    box-shadow:
+            50vw 50vh #FFF, 20vw 30vh #FFF, 70vw 80vh #FFF,
+            90vw 20vh #FFF, 10vw 10vh #FFF, 30vw 70vh #FFF,
+            80vw 40vh #FFF, 60vw 60vh #FFF, 40vw 90vh #FFF,
+            50vw 10vh #FFF, 15vw 25vh #FFF, 25vw 35vh #FFF,
+            35vw 45vh #FFF, 45vw 55vh #FFF, 55vw 65vh #FFF;
 }
 
 body, html {
