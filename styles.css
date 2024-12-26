@@ -7,6 +7,10 @@ body {
     height: 100%;
 }
 
+.p{
+    color: #f0f0f0;
+}
+
 header {
     background-color: #121212;
     padding: 10px 0;
@@ -94,7 +98,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin: 40px 400px; /*dfffgdfgdfdf*/
+    margin: 40px 0;
 }
 
 .text {
