@@ -94,10 +94,11 @@ main {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin: 40px 0;
+    margin: 40px 40px; /*dfffgdfgdfdf*/
 }
 
 .text {
+    color: #f0f0f0;
     flex: 1;
     text-align: left;
     padding: 20px;
