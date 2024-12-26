@@ -1,14 +1,10 @@
 /* Style général */
 body {
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to bottom, #0B032F, #FF8C00); /* Fond galaxie */
+    background: linear-gradient(to bottom, #a1410e, #6a369a); /* Fond galaxie */
     color: #ffffff;
     margin: 0 50px; /* Marge à gauche et à droite augmentée */
     height: 100%;
-}
-
-.p{
-    color: #f0f0f0;
 }
 
 header {
