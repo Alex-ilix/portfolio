@@ -3,7 +3,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
    /* background: linear-gradient(to bottom, #a1410e, #6a369a); /* Fond galaxie */
     background: radial-gradient(circle, #1a1a2e, #0f3460, #16213e, #1a1a2e); /* Fond galaxie */
-
+    font-size: 20px;
     color: #ffffff;
     margin: 0 50px; /* Marge à gauche et à droite augmentée */
     height: 100%;
