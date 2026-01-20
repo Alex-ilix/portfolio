@@ -182,6 +182,12 @@ h3 {
     animation: blink 5s infinite;
 }
 
+/* Image spécifique page contact */
+.image-contact img {
+    max-width: 30%;   /* plus petit que les 50% actuels */
+}
+
+
 /* Animation de scintillement */
 @keyframes blink {
     0%, 100% {
